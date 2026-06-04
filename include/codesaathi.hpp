@@ -14,3 +14,12 @@ inline int print_pattern_1 (int lines)
         cout<< endl;
     }
 }
+
+inline auto find_lesser (auto a, auto b)
+{
+    if (a < b)
+    {
+        return a;
+    }
+    return b;
+}
