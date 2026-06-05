@@ -34,3 +34,19 @@ inline auto find_greater (auto a, auto b)
     }
     return x;
 }
+
+inline void print_fibonacci (int limit)
+{
+    int a = 0, b = 1, sum = 0;
+
+    
+    while (limit)
+    {
+        a = b;
+        b = sum;
+        cout<< sum<< " ";
+        sum = a+b;
+        limit--;
+    }
+    cout<< endl;
+}

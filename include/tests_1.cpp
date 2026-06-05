@@ -12,6 +12,6 @@ int main ()
     cout<< find_lesser(3.1, 3.3)<< " is lesser."<< endl;
     cout<< find_greater(3.1, 3.3)<< " is greater."<< endl;
 
-    
+    print_fibonacci(10);
 
 }
