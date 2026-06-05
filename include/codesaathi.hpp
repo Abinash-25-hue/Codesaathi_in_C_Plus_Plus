@@ -24,3 +24,13 @@ inline auto find_lesser (auto a, auto b)
     }
     return y;
 }
+
+inline auto find_greater (auto a, auto b)
+{
+    double x = a, y = b;
+    if (x < y)
+    {
+        return y;
+    }
+    return x;
+}
