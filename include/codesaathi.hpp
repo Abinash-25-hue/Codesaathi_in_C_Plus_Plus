@@ -15,7 +15,7 @@ inline void print_pattern_1 (int lines)
     }
 }
 
-inline auto find_lesser (auto a, auto b)
+inline auto find_smaller (auto a, auto b)
 {
     double x = a, y = b;
     if (x < y)
@@ -53,5 +53,5 @@ inline void print_fibonacci (int limit)
 
 inline int count_digits (auto number)
 {
-    
+
 }
