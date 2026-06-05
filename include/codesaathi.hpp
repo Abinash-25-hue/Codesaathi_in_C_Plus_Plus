@@ -39,7 +39,7 @@ inline void print_fibonacci (int limit)
 {
     int a = 0, b = 1, sum = 0;
 
-    
+
     while (limit)
     {
         a = b;
@@ -49,4 +49,9 @@ inline void print_fibonacci (int limit)
         limit--;
     }
     cout<< endl;
+}
+
+inline int count_digits (auto number)
+{
+    
 }
