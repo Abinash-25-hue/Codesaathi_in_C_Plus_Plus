@@ -51,7 +51,13 @@ inline void print_fibonacci (int limit)
     cout<< endl;
 }
 
-inline int count_digits (auto number)
+inline int count_digits_whole (auto number)
 {
-
+    int n = number, count = 0;
+    while (n > 0)
+    {
+        n/=10;
+        count++;
+    }
+    return count;
 }
