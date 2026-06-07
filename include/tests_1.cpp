@@ -20,9 +20,19 @@ int main ()
     cout<< find_greater(3.1, 3.3)<< " is greater."<< endl;
 
 
-    // print_fibonacci : this takes 
+    // print_fibonacci : this prints a sequence of fibonacci numbers as much as the argument
 
     int how_many_numbers_to_print = 10;
     print_fibonacci(how_many_numbers_to_print);
+
+
+    // count_digits_whole : counts the number of digits in an integer, if a float number is given then 
+    //                      then it only counts the whole part of the number.
+
+    int integer_1 = 67;
+    float float_1 = 67.89;
+
+    cout<< "Integer_1 has "<< count_digits_whole(integer_1)<< " digits."<< endl;
+    cout<< "Float_1 has "<< count_digits_whole(float_1)<< " digits."<< endl;
 
 }
