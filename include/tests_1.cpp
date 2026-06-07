@@ -32,7 +32,10 @@ int main ()
     int integer_1 = 67;
     float float_1 = 67.89;
 
-    cout<< "Integer_1 has "<< count_digits_whole(integer_1)<< " digits."<< endl;
-    cout<< "Float_1 has "<< count_digits_whole(float_1)<< " digits."<< endl;
+    cout<< integer_1<<" has "<< count_digits_whole(integer_1)<< " digits."<< endl;
+    cout<< float_1<<" has "<< count_digits_whole(float_1)<< " digits."<< endl;
+
+
+    // count_digits : counts the number of digits of all numbers
 
 }

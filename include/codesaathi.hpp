@@ -61,3 +61,33 @@ inline int count_digits_whole (auto number)
     }
     return count;
 }
+
+inline int count_digits (auto number)
+{
+    int n = number, count = 0, limit = 8;
+    double floor = n, actual = number;
+    if (number > floor)
+    {
+        int temp = actual;
+        floor = temp;
+        while ((actual - floor) != 0)
+        {
+            count++;
+            actual*=10;
+            temp = actual;
+            floor = temp;
+
+            while (limit == 0)
+            {
+                actual -= (floor - 1);
+                limit = 8;
+            }
+            limit--;
+        }
+    }
+    while (n > 0)
+    {
+        n/=10;
+        count++;
+    }
+}
