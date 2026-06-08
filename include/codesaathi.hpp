@@ -1,6 +1,7 @@
 #pragma once
 
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 inline void print_pattern_1 (int lines)
@@ -66,22 +67,25 @@ inline int count_digits (auto number)
 {
     int n = number, count = 0, limit = 8;
     double floor = n, actual = number;
-    if (number > floor)
+    cout<< "actual = "<< actual<< ", floor = "<< floor<< endl;
+    if (actual > floor)
     {
         int temp = actual;
         floor = temp;
-        while ((actual - floor) != 0)
+        //while ((actual - floor) != 0)
+        while ((floor + 1.0 != actual) && limit > 1)
         {
             count++;
             actual*=10;
-            temp = actual;
+            int temp = actual;
             floor = temp;
+            cout<< "Count = "<< count<< ", temp = "<< temp<<", floor = "<< floor<< ", actual = "<< actual<<endl;
 
-            while (limit == 0)
+            /*if (limit == 0)
             {
                 actual -= (floor - 1);
                 limit = 8;
-            }
+            }*/
             limit--;
         }
     }
@@ -90,4 +94,5 @@ inline int count_digits (auto number)
         n/=10;
         count++;
     }
+    return count;
 }

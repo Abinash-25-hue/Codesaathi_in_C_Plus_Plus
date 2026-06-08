@@ -30,12 +30,20 @@ int main ()
     //                      then it only counts the whole part of the number.
 
     int integer_1 = 67;
-    float float_1 = 67.89;
+    float float_1 = 11.11;
 
     cout<< integer_1<<" has "<< count_digits_whole(integer_1)<< " digits."<< endl;
     cout<< float_1<<" has "<< count_digits_whole(float_1)<< " digits."<< endl;
 
 
-    // count_digits : counts the number of digits of all numbers
+    // count_digits : counts the number of digits in numbers of all datatypes
+
+    cout<< integer_1<< " has "<< count_digits(integer_1)<< " digits."<< endl;
+    cout<< float_1<< " has "<< count_digits(float_1)<< " digits."<< endl;
+
+    double a = 6789.0, c;
+    int b = a;
+    c = b;
+    cout<< "a = "<< a<< ", b = "<< b<< ", c = "<< c<< endl;
 
 }
