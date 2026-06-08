@@ -63,29 +63,39 @@ inline int count_digits_whole (auto number)
     return count;
 }
 
-inline int count_digits (auto number)
+/*inline int count_digits (auto number)
 {
     int n = number, count = 0, limit = 8;
     double floor = n, actual = number;
+    //actual = round(actual);
     cout<< "actual = "<< actual<< ", floor = "<< floor<< endl;
     if (actual > floor)
     {
         int temp = actual;
         floor = temp;
+        floor = ceil(floor);
         //while ((actual - floor) != 0)
-        while ((floor + 1.0 != actual) && limit > 1)
+        while (limit > 1)
         {
             count++;
             actual*=10;
+            //int temp = ceil(actual);
             int temp = actual;
             floor = temp;
+            //floor = ceil(floor);
             cout<< "Count = "<< count<< ", temp = "<< temp<<", floor = "<< floor<< ", actual = "<< actual<<endl;
 
-            /*if (limit == 0)
+            if (limit == 0)
             {
                 actual -= (floor - 1);
                 limit = 8;
-            }*/
+            }
+            
+            if ((actual - floor) <= 1e-9)
+            {
+                cout<< "--broke--"<< endl;
+                break;
+            }
             limit--;
         }
     }
@@ -95,4 +105,5 @@ inline int count_digits (auto number)
         count++;
     }
     return count;
-}
+}*/
+

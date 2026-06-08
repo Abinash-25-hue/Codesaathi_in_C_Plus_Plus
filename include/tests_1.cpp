@@ -36,14 +36,16 @@ int main ()
     cout<< float_1<<" has "<< count_digits_whole(float_1)<< " digits."<< endl;
 
 
+    /*            ---- This function has been removed for noe for further improvement ----
     // count_digits : counts the number of digits in numbers of all datatypes
 
-    cout<< integer_1<< " has "<< count_digits(integer_1)<< " digits."<< endl;
-    cout<< float_1<< " has "<< count_digits(float_1)<< " digits."<< endl;
+    //cout<< integer_1<< " has "<< count_digits(integer_1)<< " digits."<< endl;
+    //cout<< float_1<< " has "<< count_digits(float_1)<< " digits."<< endl;
 
     double a = 6789.0, c;
     int b = a;
     c = b;
     cout<< "a = "<< a<< ", b = "<< b<< ", c = "<< c<< endl;
+    */
 
 }
