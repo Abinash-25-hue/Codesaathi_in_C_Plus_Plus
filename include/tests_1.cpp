@@ -4,7 +4,7 @@ using namespace std;
 
 int main ()
 {
-    print_pattern_1(5);
+    /*print_pattern_1(5);
 
     
 
@@ -48,4 +48,8 @@ int main ()
     cout<< "a = "<< a<< ", b = "<< b<< ", c = "<< c<< endl;
     */
 
+    /*cout<< count_digit(12);
+    cout<< count_digit(12.345);*/
+
+    
 }

@@ -107,3 +107,22 @@ inline int count_digits_whole (auto number)
     return count;
 }*/
 
+/*inline int count_digit (auto n)
+{
+    double num = n;
+    string str = to_string(n);
+    cout<< str<< endl;
+}*/
+
+inline bool check_palindrome (string str)
+{
+    for (int index = 0; index < str.size()/2; index++)
+    {
+        if (str[index] != str[str.size() - index - 1])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
