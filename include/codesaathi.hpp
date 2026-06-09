@@ -130,3 +130,35 @@ inline bool check_palindrome (string str)
     return true;
 }
 
+inline bool check_palindrome_2 (string str)
+{
+    if (str.size() == 0)
+    {
+        return false;
+    }
+    char a, b;
+    for (int index = 0; index < str.size()/2; index++)
+    {
+        a = str[index];
+        b = str[str.size() - index - 1];
+        int ascii = a;
+        if (ascii >= 65 && ascii < 91)
+        {
+            ascii += 32;
+            a = ascii;
+        }
+        ascii = b;
+        if (ascii >= 65 && ascii < 91)
+        {
+            ascii += 32;
+            b = ascii;
+        }
+
+        if (a != b)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
