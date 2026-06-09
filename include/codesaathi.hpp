@@ -116,6 +116,10 @@ inline int count_digits_whole (auto number)
 
 inline bool check_palindrome (string str)
 {
+    if (str.size() == 0)
+    {
+        return false;
+    }
     for (int index = 0; index < str.size()/2; index++)
     {
         if (str[index] != str[str.size() - index - 1])
