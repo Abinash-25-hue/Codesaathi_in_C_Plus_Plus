@@ -78,7 +78,26 @@ int main ()
             cout<< "False";
         }
         cout<< endl;
-        
+
+    }
+
+    cout<< endl;
+
+    vector <string> string_vector_2;
+    string_vector_2.push_back("abcba");
+    string_vector_2.push_back("aBcba");
+
+    for (string st : string_vector_2)
+    {
+        if (check_palindrome_2(st))
+        {
+            cout<< "True";
+        }
+        else
+        {
+            cout<< "False";
+        }
+        cout<< endl;
     }
     
 }
