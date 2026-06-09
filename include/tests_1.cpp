@@ -1,4 +1,5 @@
 #include<iostream>
+#include<bits/stdc++.h>
 #include"codesaathi.hpp"
 using namespace std;
 
@@ -51,5 +52,33 @@ int main ()
     /*cout<< count_digit(12);
     cout<< count_digit(12.345);*/
 
+
+    // check_palindrome : checks if a string is a palindrom or not
+
+    vector <string> vector_of_strings;
+
+    vector_of_strings.push_back("abcba");   
+    vector_of_strings.push_back("efghi");
+    vector_of_strings.push_back("effe");
+    vector_of_strings.push_back("abcd");
+    vector_of_strings.push_back("");
+    vector_of_strings.push_back("abcBa");
+    vector_of_strings.push_back("EffE");
+    vector_of_strings.push_back("a");
+    vector_of_strings.push_back("\n");
+
+    for (string st : vector_of_strings)
+    {
+        if (check_palindrome(st))
+        {
+            cout<< "True";
+        }
+        else
+        {
+            cout<< "False";
+        }
+        cout<< endl;
+        
+    }
     
 }
