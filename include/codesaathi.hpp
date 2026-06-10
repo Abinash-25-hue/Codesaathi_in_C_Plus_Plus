@@ -162,3 +162,25 @@ inline bool check_palindrome_2 (string str)
     return true;
 }
 
+inline bool check_prime (auto n)
+{
+    int num = n;
+    if (is_same<decltype(n), int>::value != 1)
+    {
+        //cout<< "not int ";
+        return false;
+    }
+    if (num < 2)
+    {
+        return false;
+    }
+    for (int index = 2; index < num - 1; index++)
+    {
+        if ((num % index) == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+    
+}
