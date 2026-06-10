@@ -182,5 +182,26 @@ inline bool check_prime (auto n)
         }
     }
     return true;
-    
 }
+
+inline int count_vowel (string st)
+{
+    int count = 0, ascii;
+    for (int index = 0; index < st.size(); index++)
+    {
+        char c = st[index];
+        ascii = c;
+        if (ascii >= 65 && ascii < 91 )
+        {
+            ascii += 32;
+            c = ascii;
+        }
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+
