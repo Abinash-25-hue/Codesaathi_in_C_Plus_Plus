@@ -55,6 +55,7 @@ int main ()
 
     // check_palindrome : checks if a string is a palindrome or not
 
+    /*
     vector <string> vector_of_strings;
 
     vector_of_strings.push_back("abcba");   
@@ -153,5 +154,16 @@ int main ()
     }
     cout<< endl;
     
-    
+    */
+
+    // count_vowel : counts the number of vowels in a string
+
+    string alphabet = "abcdefghijklmnopqrstuvwxyz", alphabet_upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    string empty_string = "", random_string = "aaaeeiiooou", random_string_2 = "4ax9JyUyi865Dr7yp";
+
+    cout<< count_vowel(alphabet)<< endl;
+    cout<< count_vowel(alphabet_upper_case)<< endl;
+    cout<< count_vowel(empty_string)<< endl;
+    cout<< count_vowel(random_string)<< endl;
+    cout<< count_vowel(random_string_2)<< endl;
 }
