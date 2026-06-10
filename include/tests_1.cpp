@@ -53,7 +53,7 @@ int main ()
     cout<< count_digit(12.345);*/
 
 
-    // check_palindrome : checks if a string is a palindrom or not
+    // check_palindrome : checks if a string is a palindrome or not
 
     vector <string> vector_of_strings;
 
@@ -99,5 +99,59 @@ int main ()
         }
         cout<< endl;
     }
+    cout<< endl;
+
+
+    // check_prime: checks if an integer is prime, returns false for 0, 1, and all integers < 0, also returns 
+    //              false for floating point numbers.
+
+    vector <int> nums;
+    nums.push_back(0);
+    nums.push_back(1);
+    nums.push_back(2);
+    nums.push_back(3);
+    nums.push_back(4);
+    nums.push_back(5);
+    nums.push_back(-1);
+    nums.push_back(-2);
+    nums.push_back(-3);
+    nums.push_back(-4);
+    nums.push_back(-5);
+    
+
+    for (int i : nums)
+    {
+        if (check_prime(i))
+        {
+            cout<< "True";
+        }
+        else
+        {
+            cout<< "False";
+        }
+        cout<< endl;
+    }
+    cout<< endl;
+
+    if (check_prime(34.45))
+    {
+        cout<< "True";
+    }
+    else
+    {
+        cout<< "False";
+    }
+    cout<< endl<< endl;
+
+    if (check_prime('a'))
+    {
+        cout<< "True";
+    }
+    else
+    {
+        cout<< "False";
+    }
+    cout<< endl;
+    
     
 }
