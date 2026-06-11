@@ -168,4 +168,16 @@ int main ()
     cout<< count_vowel(random_string)<< endl;
     cout<< count_vowel(random_string_2)<< endl;
     cout<< count_vowel(random_string_3)<< endl<< endl;
+
+    
+    // count_consonant : counts the number of consonants in a string
+
+    // Using the same test cases as count_vowel :-
+
+    cout<< count_consonant(alphabet)<< endl;
+    cout<< count_consonant(alphabet_upper_case)<< endl;
+    cout<< count_consonant(empty_string)<< endl;
+    cout<< count_consonant(random_string)<< endl;
+    cout<< count_consonant(random_string_2)<< endl;
+    
 }
