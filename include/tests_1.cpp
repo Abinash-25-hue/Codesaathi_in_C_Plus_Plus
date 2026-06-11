@@ -179,5 +179,6 @@ int main ()
     cout<< count_consonant(empty_string)<< endl;
     cout<< count_consonant(random_string)<< endl;
     cout<< count_consonant(random_string_2)<< endl;
-    
+    cout<< count_consonant(random_string_3)<< endl<< endl;
+
 }
