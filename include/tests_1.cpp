@@ -181,4 +181,17 @@ int main ()
     cout<< count_consonant(random_string_2)<< endl;
     cout<< count_consonant(random_string_3)<< endl<< endl;
 
+
+    // count_words : counts words in a sentence, basically it counts the number of continuous characters 
+    //               separated by white space (" ").
+
+    string sentence = "The quick brown fox jumps over the lazy dog";
+    string empty_sentence = "", one_word = "Programming";
+    string crypted = " 8g*7t679b p&12=+67b 7g76V uh7T765d5hB_8IU97TR^Z4R  et7FD%$%3";
+
+    cout<< count_words(sentence)<< endl;
+    cout<< count_words(empty_sentence)<< endl;
+    cout<< count_words(one_word)<< endl;
+    cout<< count_words(crypted)<< endl;
+
 }
