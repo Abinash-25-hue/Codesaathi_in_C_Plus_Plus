@@ -224,3 +224,31 @@ inline int count_consonant (string st)
     }
     return count;
 }
+
+inline int count_words (string st)
+{
+    bool is_word = false;
+    int count = 0;
+    for (int index = 0; index < st.size(); index++)
+    {
+        if (st[index] == ' ')
+        {
+            if (is_word == true)
+            {
+                //cout<< " ";
+                is_word = false;
+                //count++;
+            }
+        }
+        else if (st[index] != ' ')
+        {
+            if (is_word == false)
+            {
+                is_word = true;
+                //cout<< st[index];
+                count++;
+            }
+        }
+    }
+    return count;
+}
