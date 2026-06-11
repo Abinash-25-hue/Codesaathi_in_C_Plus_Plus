@@ -160,10 +160,12 @@ int main ()
 
     string alphabet = "abcdefghijklmnopqrstuvwxyz", alphabet_upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     string empty_string = "", random_string = "aaaeeiiooou", random_string_2 = "4ax9JyUyi865Dr7yp";
+    string random_string_3 = "wrvbwvhgpy5m5srvhzlpg";
 
     cout<< count_vowel(alphabet)<< endl;
     cout<< count_vowel(alphabet_upper_case)<< endl;
     cout<< count_vowel(empty_string)<< endl;
     cout<< count_vowel(random_string)<< endl;
     cout<< count_vowel(random_string_2)<< endl;
+    cout<< count_vowel(random_string_3)<< endl<< endl;
 }
