@@ -252,3 +252,12 @@ inline int count_words (string st)
     }
     return count;
 }
+
+inline bool is_alphanum (char c)
+{
+    if (('A' <= c && c <='Z') || ('0' <= c && c <= '9') || ('a' <= c && c <= 'z'))
+    {
+        return true;
+    }
+    return false;
+}
