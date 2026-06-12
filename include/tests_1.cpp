@@ -154,7 +154,7 @@ int main ()
     }
     cout<< endl;
     
-    */
+    
 
     // count_vowel : counts the number of vowels in a string
 
@@ -193,5 +193,28 @@ int main ()
     cout<< count_words(empty_sentence)<< endl;
     cout<< count_words(one_word)<< endl;
     cout<< count_words(crypted)<< endl;
+    
+    */
+
+
+    // is_alphanum : checks if a character is an alphanumeric value.
+
+    string test_string = "Marge, let's \"[went].\" I await {news} telegram.";
+
+    cout<< endl<< test_string<< endl;
+    for (int index = 0; index < test_string.size(); index++)
+    {
+        if (is_alphanum(test_string[index]))
+        {
+            cout<< "1";
+        }
+        else
+        {
+            cout<< "0";
+        }
+        
+    }
+    
+    cout<< endl<< endl;
 
 }
