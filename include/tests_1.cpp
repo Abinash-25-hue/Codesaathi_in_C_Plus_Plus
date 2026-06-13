@@ -221,6 +221,9 @@ int main ()
     // to_lowercase : converts uppercase letters to lowercase.
 
     string st = " AbCdEffG 68 _#TesTiNG \"Hello\" ";
-    cout<< to_lowercase(st)<< endl;
+    int number = 78;
+
+    cout<< "st = "<< to_lowercase(st)<< endl;
+    cout<< "Response to the integer \'number\' = \""<< to_lowercase(number)<< "\""<< endl;
 
 }
