@@ -261,3 +261,22 @@ inline bool is_alphanum (char c)
     }
     return false;
 }
+
+inline string to_lowercase (auto st)
+{
+    if ((is_same<decltype(st), string>::value != 1) && (is_same<decltype(st), char[]>::value != 1))
+    {
+        return "";
+    }
+
+    string final = st;
+    for (int index = 0; index < final.size(); index++)
+    {
+        if (final[index] >= 'A' && final[index] <= 'Z')
+        {
+            char c = final[index] + 'a' - 'A';
+            final[index] = c;
+        }
+    }
+    return final;
+}
