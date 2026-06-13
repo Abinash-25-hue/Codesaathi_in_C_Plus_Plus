@@ -217,4 +217,10 @@ int main ()
     
     cout<< endl<< endl;
 
+    
+    // to_lowercase : converts uppercase letters to lowercase.
+
+    string st = " AbCdEffG 68 _#TesTiNG \"Hello\" ";
+    cout<< to_lowercase(st)<< endl;
+
 }
