@@ -221,11 +221,13 @@ int main ()
     // to_lowercase : converts uppercase letters to lowercase.
 
     string st = " AbCdEffG 68 _#TesTiNG \"Hello\" ";
+    char c = 'A';
     int number = 78;
     bool truth = true;
 
     cout<< "st = "<< to_lowercase(st)<< endl;
     cout<< "Response to the integer \'number\' = \""<< to_lowercase(number)<< "\""<< endl;
     cout<< "Response to the bool \'truth\' = \""<< to_lowercase(truth)<< "\""<< endl;
+    cout<< "Response to the single character \'c\' = "<< to_lowercase(c)<< endl;
 
 }
