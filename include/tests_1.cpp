@@ -228,6 +228,17 @@ int main ()
     cout<< "st = "<< to_lowercase(st)<< endl;
     cout<< "Response to the integer \'number\' = \""<< to_lowercase(number)<< "\""<< endl;
     cout<< "Response to the bool \'truth\' = \""<< to_lowercase(truth)<< "\""<< endl;
-    cout<< "Response to the single character \'c\' = "<< to_lowercase(c)<< endl;
+    cout<< "Response to the single character \'c\' = "<< to_lowercase(c)<< endl<< endl;
+
+
+    // to_uppercase : converts lowercase letters to uppercase.
+
+    //using the same test cases as above
+
+    cout<< "st = "<< to_uppercase(st)<< endl;
+    cout<< "Response to the integer \'number\' = \""<< to_uppercase(number)<< "\""<< endl;
+    cout<< "Response to the bool \'truth\' = \""<< to_uppercase(truth)<< "\""<< endl;
+    cout<< "Response to the single character \'c\' = \""<< to_uppercase(c)<< "\""<< endl<< endl;
+
 
 }
