@@ -285,3 +285,27 @@ inline string to_lowercase (auto st)
     
     return final;
 }
+
+inline string to_uppercase (auto st)
+{
+    string final;
+    if ((is_same<decltype(st), string>::value != 1) && (is_same<decltype(st), char[]>::value != 1) && (is_same<decltype(st), char>::value != 1))
+    {
+        return "";
+    }
+    else
+    {
+        final = st;
+        for (int index = 0; index < final.size(); index++)
+        {
+            if (final[index] >= 'a' && final[index] <= 'z')
+            {
+                char c = final[index] - ('a' - 'A');
+                final[index] = c;
+            }
+        }
+    }
+
+   return final;
+
+}
