@@ -2,6 +2,7 @@
 
 #include<iostream>
 #include<cmath>
+#include<bits/stdc++.h>
 using namespace std;
 
 inline void print_pattern_1 (int lines)
