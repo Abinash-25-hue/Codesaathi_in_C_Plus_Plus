@@ -310,3 +310,53 @@ inline string to_uppercase (auto st)
    return final;
 
 }
+
+inline bool valid_equation (auto st)
+{
+    //stack <char> s;
+    if ((is_same<decltype(st), string>::value != 1) && (is_same<decltype(st), char[]>::value != 1) && (is_same<decltype(st), char>::value != 1))
+    {
+        return false;
+    }
+    else
+    {
+        stack <char> s;
+        for (int index = 0; index < st.size(); index++)
+        {
+            //char c = st[index];
+            if (st[index] == '(' || st[index] == '{' || st[index] == '[')
+            {
+                s.push(st[index]);
+            }
+            if (st[index] == ')' || st[index] == '}' || st[index] == ']')
+            {
+                if (s.empty() == true)
+                {
+                    return false;
+                }
+                if (s.top() == '(' && st[index] == ')' )
+                {
+                    s.pop();
+                }
+                else if (s.top() == '{' && st[index] == '}')
+                {
+                    s.pop();
+                }
+                else if (s.top() == '[' && st[index] == ']')
+                {
+                    s.pop();
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+        if (s.empty())
+        {
+            return true;
+        }
+        return false;
+        
+    }
+}
