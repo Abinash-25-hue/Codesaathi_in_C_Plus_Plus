@@ -250,6 +250,7 @@ int main ()
     equations.push_back("(2+3*(4)");
     equations.push_back("[]");
     equations.push_back("(){}[]");
+    equations.push_back("({()()}())[{({})[]}]");
     equations.push_back("");
 
     for (string x : equations)
