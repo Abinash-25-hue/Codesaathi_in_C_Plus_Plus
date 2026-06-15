@@ -241,4 +241,29 @@ int main ()
     cout<< "Response to the single character \'c\' = \""<< to_uppercase(c)<< "\""<< endl<< endl;
 
 
+    // valid_equation : It checks if the brackets in a string are valid.
+
+    vector <string> equations;
+    equations.push_back("(2+3)*4");
+    equations.push_back("(2+3}*4");
+    equations.push_back("(2+3)*4)");
+    equations.push_back("(2+3*(4)");
+    equations.push_back("[]");
+    equations.push_back("(){}[]");
+
+    for (string x : equations)
+    {
+        cout<< x << " : ";
+        if (valid_equation(x))
+        {
+            cout<< "True"<< endl;
+        }
+        else
+        {
+            cout<< "False"<< endl;
+        }
+    }
+
+
+
 }
