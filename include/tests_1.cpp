@@ -35,6 +35,7 @@ int main ()
 
     cout<< integer_1<<" has "<< count_digits_whole(integer_1)<< " digits."<< endl;
     cout<< float_1<<" has "<< count_digits_whole(float_1)<< " digits."<< endl;
+    cout<< "-68"<< " has "<< count_digits_whole(-68)<< " digits."<< endl;
 
 
     /*            ---- This function has been removed for noe for further improvement ----
