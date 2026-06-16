@@ -56,6 +56,10 @@ inline void print_fibonacci (int limit)
 inline int count_digits_whole (auto number)
 {
     int n = number, count = 0;
+    if (n == 0)
+    {
+        return 1;
+    }
     while (n > 0)
     {
         n/=10;
