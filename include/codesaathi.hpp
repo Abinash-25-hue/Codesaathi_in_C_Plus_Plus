@@ -360,3 +360,40 @@ inline bool valid_equation (auto st)
         
     }
 }
+
+inline bool check_armstrong_number (auto n)
+{
+    int sum = 0, num;
+    if ((is_same<decltype(n), string>::value == 1) || (is_same<decltype(n), char[]>::value == 1) || (is_same<decltype(n), char>::value == 1))
+    {
+        return false;
+    }
+    else
+    {
+        int temp;
+        num = n;
+        if (num < 0)
+        {
+            return false;
+        }
+        int size = count_digits_whole(num);
+        //cout<< size<< endl;
+        while (num > 0)
+        {
+            temp = num % 10;
+            int org = temp;
+            for (int index = 0; index < size - 1; index++)
+            {
+                temp *= org;
+            }
+            sum += temp;
+            num /= 10;
+            //cout<< "temp = "<< temp<< ", org = "<< org<< ", sum = "<< sum<< endl; 
+        }
+    }
+    if (sum == int(n))
+    {
+        return true;
+    }
+    return false;
+}
