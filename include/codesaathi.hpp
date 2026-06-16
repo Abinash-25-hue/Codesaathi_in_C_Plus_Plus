@@ -60,6 +60,10 @@ inline int count_digits_whole (auto number)
     {
         return 1;
     }
+    if (n < 0)
+    {
+        n = -(n);
+    }
     while (n > 0)
     {
         n/=10;
