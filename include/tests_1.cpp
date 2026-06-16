@@ -267,5 +267,29 @@ int main ()
     }
 
 
+    // check_armstrong_number : checks if a number is an armstrong number.
 
+    vector <int> checking_armstrong;
+
+    checking_armstrong.push_back(153);
+    checking_armstrong.push_back(132);
+    checking_armstrong.push_back(153.68);
+    checking_armstrong.push_back(-153);
+    checking_armstrong.push_back(0);
+    checking_armstrong.push_back(1);
+
+    cout<< endl;
+    for (int index : checking_armstrong)
+    {
+        cout<< index<< " : ";
+        if (check_armstrong_number(index))
+        {
+            cout<< "True";
+        }
+        else
+        {
+            cout<< "False";
+        }
+        cout<< endl;
+    }
 }
