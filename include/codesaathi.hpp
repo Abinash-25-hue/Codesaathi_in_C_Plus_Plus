@@ -405,3 +405,32 @@ inline bool check_armstrong_number (auto n)
     }
     return false;
 }
+
+inline bool check_perfect_number (auto n)
+{
+    int sum = 1, num = 0;
+    if (is_same<decltype(n), string>::value == 1 || is_same<decltype(n), char>::value == 1 || is_same<decltype(n), char>::value == 1)
+    {
+        return false;
+    }
+    else
+    {
+        num = n;
+        if (num < 0)
+        {
+            return false;
+        }
+        for (int index = 2; index < num - 1; index++)
+        {
+            if (num % index == 0)
+            {
+                sum += index;
+            }
+        }
+    }
+    if (sum == num)
+    {
+        return true;
+    }
+    return false;
+}
