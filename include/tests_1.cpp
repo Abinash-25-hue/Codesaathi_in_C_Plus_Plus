@@ -293,4 +293,29 @@ int main ()
         }
         cout<< endl;
     }
+    cout<< endl;
+
+
+    //  check_perfect_number : checks if a number is a perfect number
+
+    vector <int> checking_perfect;
+
+    checking_perfect.push_back(28);
+    checking_perfect.push_back(496);
+    checking_perfect.push_back(8128);
+    checking_perfect.push_back(67);
+
+    for (int x : checking_perfect)
+    {
+        if (check_perfect_number(x))
+        {
+            cout<< "True";
+        }
+        else
+        {
+            cout<< "False";
+        }
+        cout<< endl;
+    }
+
 }
