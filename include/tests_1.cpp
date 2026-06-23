@@ -304,6 +304,7 @@ int main ()
     checking_perfect.push_back(496);
     checking_perfect.push_back(8128);
     checking_perfect.push_back(67);
+    checking_perfect.push_back(0);
 
     for (int x : checking_perfect)
     {
